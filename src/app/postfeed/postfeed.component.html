@@ -1,0 +1,24 @@
+<div  class="container-fluid">  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">  
+        <ul class="navbar-nav">  
+           
+          <li class="nav-item ">  
+            <button (click)=routeNewPage()>Add New Post</button>
+          </li>
+          <li class="nav-item ">  
+            <button (click)=routeAllPage()>Post Feed</button>
+          </li>
+                    
+        </ul>  
+      </nav>     
+       
+    </div>  
+  
+
+
+<div *ngFor="let post of allPost">
+<div>traveller name : {{post.userName}}</div>
+<p>traveller post : {{post.post}}</p>
+<div>traveller location : {{post.location}}</div>
+<br><br><br>
+</div>
